@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Photography — Yuval Kolodkin-Gal</title>
+<style>
+:root{--bg:#f6f5f2;--fg:#1c1c1c;--mut:#6b6b6b;--card:#fff;--line:#e2e0db}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#ececec;--mut:#9a9a9a;--card:#1c1c1c;--line:#2c2c2c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 system-ui,sans-serif}
+header{padding:28px 16px 8px;max-width:1400px;margin:auto}h1{margin:0;font-size:28px}header p{color:var(--mut);margin:4px 0 0}
+.bar{position:sticky;top:0;background:var(--bg);z-index:3;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;max-width:1400px;margin:auto;border-bottom:1px solid var(--line)}
+select{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit}
+#n{margin-left:auto;color:var(--mut);align-self:center}
+.grid{max-width:1400px;margin:auto;padding:16px;columns:4 280px;column-gap:12px}
+figure{break-inside:avoid;margin:0 0 12px;background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+figure img{width:100%;display:block;cursor:zoom-in}
+figcaption{padding:8px 10px;font-size:13px}figcaption small{color:var(--mut);display:block}
+#lb{position:fixed;inset:0;background:#000e;display:none;align-items:center;justify-content:center;z-index:9;flex-direction:column;gap:8px;color:#eee}
+#lb.on{display:flex}#lb img{max-width:96vw;max-height:88vh}
+</style></head><body>
+<header><h1>Photography</h1><p>Original photographs by Yuval Kolodkin-Gal. All rights reserved.</p></header>
+<div class="bar">
+  <select id="camera"><option value="">All cameras</option></select>
+  <select id="category"><option value="">All categories</option></select>
+  <select id="tier"><option value="">All resolutions</option></select>
+  <select id="year"><option value="">All years</option></select>
+  <span id="n"></span>
+</div>
+<div class="grid" id="grid"></div>
+<div id="lb"><img id="lbimg" alt=""><div id="lbcap"></div></div>
+<script src="data.js"></script>
+<script>
+const F={camera:p=>p.camera_name,category:p=>p.category,tier:p=>p.resolution_tier,year:p=>p.date==='unknown'?'date unknown':p.date.slice(0,4)};
+for(const k in F){const s=document.getElementById(k);[...new Set(CATALOG.map(F[k]))].sort().forEach(v=>s.add(new Option(`${v} (${CATALOG.filter(p=>F[k](p)===v).length})`,v)));s.onchange=draw}
+const grid=document.getElementById('grid'),lb=document.getElementById('lb');
+function draw(){
+  const sel=Object.fromEntries(Object.keys(F).map(k=>[k,document.getElementById(k).value]));
+  const list=CATALOG.filter(p=>Object.keys(F).every(k=>!sel[k]||F[k](p)===sel[k]));
+  document.getElementById('n').textContent=list.length+' photos';
+  grid.innerHTML='';
+  for(const p of list){const f=document.createElement('figure');
+    f.innerHTML=`<img loading="lazy" src="${p.preview}" alt="${p.title}"><figcaption>${p.title}<small>${p.camera_name} · ${p.date} · ${p.category}</small></figcaption>`;
+    f.querySelector('img').onclick=()=>{document.getElementById('lbimg').src=p.master;document.getElementById('lbcap').textContent=`${p.title} — ${p.camera_name}, ${p.date}`;lb.classList.add('on')};
+    grid.appendChild(f)}
+}
+lb.onclick=()=>lb.classList.remove('on');document.onkeydown=e=>{if(e.key==='Escape')lb.classList.remove('on')};
+draw();
+</script></body></html>
