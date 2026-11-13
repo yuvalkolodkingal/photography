@@ -35,13 +35,20 @@ figcaption span { color:var(--muted); }
 #lb .cap b { color:var(--fg); font-weight:500; }
 #lb .nav { display:flex; gap:10px; }
 #lb button { background:var(--surface); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:14px; }
+.browse { padding:8px 0 36px; } .browse h2 { margin:28px 0 14px; scroll-margin-top:20px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+.card { position:relative; display:block; border-radius:6px; overflow:hidden; background:var(--surface); text-decoration:none; aspect-ratio:3/2; }
+.card img { width:100%; height:100%; object-fit:cover; display:block; opacity:.72; transition:opacity .2s; }
+.card:hover img { opacity:1; }
+.card span { position:absolute; left:12px; bottom:10px; right:12px; font-weight:500; text-shadow:0 1px 6px #000; }
+.card small { display:block; color:var(--fg); opacity:.85; font-weight:400; }
 footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
 @media (max-width:600px){ .wrap{padding:0 16px} nav{gap:16px} .count{margin-left:0;width:100%} }
 </style></head><body>
 <div class="wrap">
   <header class="top">
     <a class="signature" href="https://github.com/yuvalkolodkingal">Yuval Kolodkin-Gal</a>
-    <nav><a href="#gallery">Gallery</a><a href="by-camera/README.md">Cameras</a><a href="by-category/README.md">Categories</a><a href="https://github.com/yuvalkolodkingal/photography">Source</a></nav>
+    <nav><a href="#gallery">Gallery</a><a href="#cameras">Cameras</a><a href="#subjects">Subjects</a><a href="https://github.com/yuvalkolodkingal/photography">Source</a></nav>
   </header>
   <section class="intro">
     <h1>Photography</h1>
@@ -57,7 +64,8 @@ footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--mute
   <button class="reset" id="reset">Reset</button>
   <span class="count" id="n"></span>
 </div></div>
-<main class="wrap"><div class="grid" id="grid"></div></main>
+<main class="wrap"><div class="grid" id="grid"></div>
+<section class="browse"><h2 id="cameras">Cameras</h2><div class="cards" id="camcards"></div><h2 id="subjects">Subjects</h2><div class="cards" id="subcards"></div></section></main>
 <div class="wrap"><footer>© Yuval Kolodkin-Gal. All rights reserved. Photographs may not be reused without permission.</footer></div>
 <div id="lb" role="dialog" aria-modal="true"><img id="lbimg" alt=""><div class="cap" id="lbcap"></div>
   <div class="nav"><button id="prev">← Prev</button><button id="close">Close</button><button id="next">Next →</button></div></div>
@@ -72,6 +80,14 @@ for(const k in F){const s=document.getElementById(k);
 const st=document.getElementById('stats');
 st.innerHTML=`<div><b>${CATALOG.length}</b>photographs</div><div><b>${new Set(CATALOG.map(F.camera)).size}</b>cameras</div><div><b>${new Set(CATALOG.map(F.category)).size}</b>subjects</div>`;
 document.getElementById('reset').onclick=()=>{for(const k in F)document.getElementById(k).value='';draw()};
+function cards(el,k){const g={};CATALOG.forEach(p=>(g[F[k](p)]??=[]).push(p));
+  document.getElementById(el).innerHTML=Object.keys(g).sort((a,b)=>g[b].length-g[a].length).map(v=>{const c=g[v][g[v].length-1];
+    return `<a class="card" href="#${k}=${encodeURIComponent(v)}"><img loading="lazy" src="${c.preview}" alt=""><span>${(LABEL[k]||String)(v)}<small>${g[v].length} photos</small></span></a>`}).join('')}
+cards('camcards','camera');cards('subcards','category');
+function fromHash(){const m=location.hash.slice(1).match(/^(camera|category|tier|year)=(.+)$/);if(!m)return;
+  for(const k in F)document.getElementById(k).value='';document.getElementById(m[1]).value=decodeURIComponent(m[2]);draw();
+  document.getElementById('gallery').scrollIntoView({behavior:'smooth'})}
+window.addEventListener('hashchange',fromHash);
 const grid=document.getElementById('grid'),lb=document.getElementById('lb');let list=[],cur=0;
 function meta(p){return [p.camera_name,p.date==='unknown'?'date unknown':p.date,nice(p.category),p.original_megapixels+' MP original'].join(' · ')}
 function draw(){
@@ -90,5 +106,5 @@ const close=()=>lb.classList.remove('on');
 document.getElementById('close').onclick=close;document.getElementById('prev').onclick=()=>open(cur-1);document.getElementById('next').onclick=()=>open(cur+1);
 lb.onclick=e=>{if(e.target===lb)close()};
 document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
-draw();
+draw();fromHash();
 </script></body></html>
