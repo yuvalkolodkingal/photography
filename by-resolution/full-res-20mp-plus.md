@@ -1,6 +1,54 @@
 # full-res-20mp-plus
 
-40 photos by Yuval Kolodkin-Gal.
+48 photos by Yuval Kolodkin-Gal.
+
+### Cats 0187
+
+[![Cats 0187](../previews/2026-11-12_cats_0187.jpg)](../photos/canon-eos-r50/2026/2026-11-12_cats_0187.jpg)
+
+Canon EOS R50 · 2026-11-12 · cats · original 24.0 MP
+
+### Cats 0200
+
+[![Cats 0200](../previews/2026-11-12_cats_0200.jpg)](../photos/canon-eos-r50/2026/2026-11-12_cats_0200.jpg)
+
+Canon EOS R50 · 2026-11-12 · cats · original 24.0 MP
+
+### Cats 0202
+
+[![Cats 0202](../previews/2026-11-12_cats_0202.jpg)](../photos/canon-eos-r50/2026/2026-11-12_cats_0202.jpg)
+
+Canon EOS R50 · 2026-11-12 · cats · original 24.0 MP
+
+### Cats 0204
+
+[![Cats 0204](../previews/2026-11-12_cats_0204.jpg)](../photos/canon-eos-r50/2026/2026-11-12_cats_0204.jpg)
+
+Canon EOS R50 · 2026-11-12 · cats · original 24.0 MP
+
+### Dog 0213
+
+[![Dog 0213](../previews/2026-11-12_dog_0213.jpg)](../photos/canon-eos-r50/2026/2026-11-12_dog_0213.jpg)
+
+Canon EOS R50 · 2026-11-12 · dog · original 24.0 MP
+
+### Flowers Plants 0199
+
+[![Flowers Plants 0199](../previews/2026-11-12_flowers-plants_0199.jpg)](../photos/canon-eos-r50/2026/2026-11-12_flowers-plants_0199.jpg)
+
+Canon EOS R50 · 2026-11-12 · flowers-plants · original 24.0 MP
+
+### Landscape 0088
+
+[![Landscape 0088](../previews/2026-11-12_landscape_0088.jpg)](../photos/canon-eos-r50/2026/2026-11-12_landscape_0088.jpg)
+
+Canon EOS R50 · 2026-11-12 · landscape · original 24.0 MP
+
+### Night 0236
+
+[![Night 0236](../previews/2026-11-12_night_0236.jpg)](../photos/canon-eos-r50/2026/2026-11-12_night_0236.jpg)
+
+Canon EOS R50 · 2026-11-12 · night · original 24.0 MP
 
 ### Birds 0285
 

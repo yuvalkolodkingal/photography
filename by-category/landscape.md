@@ -1,12 +1,18 @@
 # landscape
 
-8 photos by Yuval Kolodkin-Gal.
+9 photos by Yuval Kolodkin-Gal.
 
 ### Sand and Sky
 
 [![Sand and Sky](../previews/sand-and-sky.jpg)](../photos/canon-powershot-sx270-hs/2025/sand-and-sky.jpg)
 
 Canon PowerShot SX270 HS · 2025-04-26 · landscape · original 1.4 MP
+
+### Landscape 0088
+
+[![Landscape 0088](../previews/2026-11-12_landscape_0088.jpg)](../photos/canon-eos-r50/2026/2026-11-12_landscape_0088.jpg)
+
+Canon EOS R50 · 2026-11-12 · landscape · original 24.0 MP
 
 ### Landscape 0389
 

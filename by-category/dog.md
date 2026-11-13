@@ -1,6 +1,12 @@
 # dog
 
-3 photos by Yuval Kolodkin-Gal.
+4 photos by Yuval Kolodkin-Gal.
+
+### Dog 0213
+
+[![Dog 0213](../previews/2026-11-12_dog_0213.jpg)](../photos/canon-eos-r50/2026/2026-11-12_dog_0213.jpg)
+
+Canon EOS R50 · 2026-11-12 · dog · original 24.0 MP
 
 ### Dog 0321
 

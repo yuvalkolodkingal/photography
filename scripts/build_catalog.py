@@ -142,22 +142,25 @@ def exif_of(jpg: Path) -> dict:
     return {k: v for k, v in out.items() if v not in (None, "")}
 
 
-def shoot_items(final_dir: Path, originals: Path, shoot: str):
+def shoot_items(final_dir: Path, originals: Path | None, shoot: str, camera: str | None = None, date_default: str | None = None):
     for jpg in sorted(final_dir.glob("*/*.jpg")):
         if jpg.name.endswith(".w3.jpg") or "your-crop" in jpg.name:
             continue
         cat, stem = jpg.parent.name, jpg.stem
         if stem in {"IMG_0623", "IMG_0624", "IMG_0625", "IMG_0632", "IMG_0635", "IMG_0636"}:
             cat = "sunset"
-        ex = exif_of(originals / f"{stem}.JPG")
+        stem = stem.removesuffix("_edited")
+        ex = exif_of(originals / f"{stem}.JPG") if originals else {}
+        if not ex:
+            ex = exif_of(jpg)
         model = (ex.get("model") or "").lower()
-        cam = "canon-eos-r50" if "r50" in model else ("unknown" if not model else re.sub(r"[^a-z0-9]+", "-", model).strip("-"))
+        cam = "canon-eos-r50" if "r50" in model else (camera or "unknown" if not model else re.sub(r"[^a-z0-9]+", "-", model).strip("-"))
         dt = ex.get("datetime")
-        date = datetime.strptime(dt, "%Y:%m:%d %H:%M:%S").date().isoformat() if dt else "unknown"
+        date = datetime.strptime(dt, "%Y:%m:%d %H:%M:%S").date().isoformat() if dt else (date_default or "unknown")
         yield {
             "slug": f"{shoot}_{cat}_{stem.split('_')[-1]}", "title": f"{cat.replace('-', ' ').title()} {stem.split('_')[-1]}",
             "description": "", "category": cat, "src": jpg, "camera": cam,
-            "camera_source": "exif" if model else "unknown", "date": date,
+            "camera_source": "exif" if model else ("confirmed by photographer" if camera else "unknown"), "date": date,
             "original_size": None, "collection": shoot, "exif": ex,
         }
 
@@ -165,6 +168,8 @@ def shoot_items(final_dir: Path, originals: Path, shoot: str):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--wallpapers", type=Path)
+    ap.add_argument("--camera", help="camera slug for shoots whose files carry no EXIF")
+    ap.add_argument("--date", help="date (YYYY-MM-DD) for shoots whose files carry no EXIF")
     ap.add_argument("--shoot", action="append", default=[],
                     help="NAME=FINAL_DIR=ORIGINALS_DIR (rendered exports by category, camera JPEGs for EXIF)")
     a = ap.parse_args()
@@ -173,8 +178,10 @@ def main():
     if a.wallpapers:
         items += list(wallpaper_items(a.wallpapers))
     for spec in a.shoot:
-        name, final, orig = spec.split("=")
-        items += list(shoot_items(Path(final), Path(orig), name))
+        parts = spec.split("=")
+        name, final = parts[0], Path(parts[1])
+        orig = Path(parts[2]) if len(parts) > 2 and parts[2] else None
+        items += list(shoot_items(final, orig, name, a.camera, a.date))
 
     catalog_path = ROOT / "metadata/catalog.json"
     old = {p["slug"]: p for p in json.loads(catalog_path.read_text())["photos"]} if catalog_path.exists() else {}
@@ -205,6 +212,9 @@ def main():
             "exif": it["exif"], "master": rel.as_posix(), "preview": f"previews/{it['slug']}.jpg",
             "source_sha256": src_hash, "photographer": AUTHOR,
         })
+    rebuilt = {"wallpapers"} if a.wallpapers else set()
+    rebuilt |= {spec.split("=")[0] for spec in a.shoot}
+    photos += [p for p in old.values() if p["collection"] not in rebuilt and (ROOT / p["master"]).exists()]
     photos.sort(key=lambda p: (p["date"], p["slug"]))
     keep = {p["master"] for p in photos} | {p["preview"] for p in photos}
     for f in list((ROOT / "photos").rglob("*.jpg")) + list((ROOT / "previews").glob("*.jpg")):

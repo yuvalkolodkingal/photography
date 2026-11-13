@@ -1,12 +1,18 @@
 # flowers-plants
 
-13 photos by Yuval Kolodkin-Gal.
+14 photos by Yuval Kolodkin-Gal.
 
 ### Lavender Light
 
 [![Lavender Light](../previews/lavender-light.jpg)](../photos/canon-powershot-sx270-hs/2025/lavender-light.jpg)
 
 Canon PowerShot SX270 HS · 2025-05-03 · flowers-plants · original 1.4 MP
+
+### Flowers Plants 0199
+
+[![Flowers Plants 0199](../previews/2026-11-12_flowers-plants_0199.jpg)](../photos/canon-eos-r50/2026/2026-11-12_flowers-plants_0199.jpg)
+
+Canon EOS R50 · 2026-11-12 · flowers-plants · original 24.0 MP
 
 ### Flowers Plants 0290
 
