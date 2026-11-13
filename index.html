@@ -25,12 +25,12 @@ select { background:var(--surface); color:var(--fg); border:1px solid var(--line
 .reset { background:none; border:none; color:var(--muted); font-size:14px; text-decoration:underline; }
 .grid { columns:4 300px; column-gap:16px; padding:24px 0 64px; }
 figure { break-inside:avoid; margin:0 0 16px; }
-figure img { width:100%; display:block; border-radius:4px; background:var(--surface); cursor:zoom-in; }
+figure img { width:100%; height:auto; display:block; border-radius:4px; background:var(--surface); cursor:zoom-in; }
 figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; gap:2px 12px; padding-top:8px; font-size:14px; }
 figcaption span { color:var(--muted); }
 #lb { position:fixed; inset:0; background:rgba(10,11,12,.96); display:none; z-index:9; align-items:center; justify-content:center; flex-direction:column; gap:12px; padding:16px; }
 #lb.on { display:flex; }
-#lb img { max-width:100%; max-height:84vh; border-radius:4px; }
+#lb img { max-width:100%; max-height:84vh; width:auto; height:auto; object-fit:contain; border-radius:4px; }
 #lb .cap { color:var(--muted); font-size:14px; text-align:center; }
 #lb .cap b { color:var(--fg); font-weight:500; }
 #lb .nav { display:flex; gap:10px; }
