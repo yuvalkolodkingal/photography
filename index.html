@@ -1,46 +1,94 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photography — Yuval Kolodkin-Gal</title>
+<title>Photography by Yuval Kolodkin-Gal</title>
+<meta name="description" content="Original photography by Yuval Kolodkin-Gal, organised by camera, category, resolution and year.">
 <style>
-:root{--bg:#f6f5f2;--fg:#1c1c1c;--mut:#6b6b6b;--card:#fff;--line:#e2e0db}
-@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#ececec;--mut:#9a9a9a;--card:#1c1c1c;--line:#2c2c2c}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 system-ui,sans-serif}
-header{padding:28px 16px 8px;max-width:1400px;margin:auto}h1{margin:0;font-size:28px}header p{color:var(--mut);margin:4px 0 0}
-.bar{position:sticky;top:0;background:var(--bg);z-index:3;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;max-width:1400px;margin:auto;border-bottom:1px solid var(--line)}
-select{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit}
-#n{margin-left:auto;color:var(--mut);align-self:center}
-.grid{max-width:1400px;margin:auto;padding:16px;columns:4 280px;column-gap:12px}
-figure{break-inside:avoid;margin:0 0 12px;background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--line)}
-figure img{width:100%;display:block;cursor:zoom-in}
-figcaption{padding:8px 10px;font-size:13px}figcaption small{color:var(--mut);display:block}
-#lb{position:fixed;inset:0;background:#000e;display:none;align-items:center;justify-content:center;z-index:9;flex-direction:column;gap:8px;color:#eee}
-#lb.on{display:flex}#lb img{max-width:96vw;max-height:88vh}
+:root { color-scheme: dark; --bg:#151719; --surface:#202326; --fg:#edeeeb; --muted:#b0b6b7; --line:#42484b; --accent:#d6decb; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+a { color:inherit; }
+button, select { font:inherit; cursor:pointer; }
+.wrap { max-width:1440px; margin:0 auto; padding:0 24px; }
+header.top { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+.signature { text-decoration:none; font-size:14px; font-weight:600; }
+nav { display:flex; gap:28px; font-size:14px; flex-wrap:wrap; }
+nav a { color:var(--muted); text-decoration:none; } nav a:hover { color:var(--fg); }
+.intro { padding:56px 0 28px; }
+h1 { font-weight:450; font-size:clamp(36px,4.5vw,64px); letter-spacing:-.055em; line-height:1.08; margin:0 0 18px; }
+.intro p { color:var(--muted); max-width:680px; margin:0; font-size:17px; }
+.stats { display:flex; gap:28px; margin-top:22px; color:var(--muted); font-size:14px; flex-wrap:wrap; }
+.stats b { color:var(--fg); font-weight:500; font-size:22px; display:block; letter-spacing:-.02em; }
+.filters { position:sticky; top:0; z-index:4; background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(8px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.filters .wrap { display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding-top:12px; padding-bottom:12px; }
+select { background:var(--surface); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font-size:14px; }
+.count { color:var(--muted); font-size:14px; margin-left:auto; }
+.reset { background:none; border:none; color:var(--muted); font-size:14px; text-decoration:underline; }
+.grid { columns:4 300px; column-gap:16px; padding:24px 0 64px; }
+figure { break-inside:avoid; margin:0 0 16px; }
+figure img { width:100%; display:block; border-radius:4px; background:var(--surface); cursor:zoom-in; }
+figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; gap:2px 12px; padding-top:8px; font-size:14px; }
+figcaption span { color:var(--muted); }
+#lb { position:fixed; inset:0; background:rgba(10,11,12,.96); display:none; z-index:9; align-items:center; justify-content:center; flex-direction:column; gap:12px; padding:16px; }
+#lb.on { display:flex; }
+#lb img { max-width:100%; max-height:84vh; border-radius:4px; }
+#lb .cap { color:var(--muted); font-size:14px; text-align:center; }
+#lb .cap b { color:var(--fg); font-weight:500; }
+#lb .nav { display:flex; gap:10px; }
+#lb button { background:var(--surface); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:14px; }
+footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
+@media (max-width:600px){ .wrap{padding:0 16px} nav{gap:16px} .count{margin-left:0;width:100%} }
 </style></head><body>
-<header><h1>Photography</h1><p>Original photographs by Yuval Kolodkin-Gal. All rights reserved.</p></header>
-<div class="bar">
-  <select id="camera"><option value="">All cameras</option></select>
-  <select id="category"><option value="">All categories</option></select>
-  <select id="tier"><option value="">All resolutions</option></select>
-  <select id="year"><option value="">All years</option></select>
-  <span id="n"></span>
+<div class="wrap">
+  <header class="top">
+    <a class="signature" href="https://github.com/yuvalkolodkingal">Yuval Kolodkin-Gal</a>
+    <nav><a href="#gallery">Gallery</a><a href="by-camera/README.md">Cameras</a><a href="by-category/README.md">Categories</a><a href="https://yuvalkolodkingal.github.io/Wallpapers/">Wallpapers</a><a href="https://github.com/yuvalkolodkingal/photography">Source</a></nav>
+  </header>
+  <section class="intro">
+    <h1>Photography</h1>
+    <p>Original photographs of birds, water, plants and light, taken by Yuval Kolodkin-Gal. Filter by camera, subject, original resolution or year, and click any photo to see it large.</p>
+    <div class="stats" id="stats"></div>
+  </section>
 </div>
-<div class="grid" id="grid"></div>
-<div id="lb"><img id="lbimg" alt=""><div id="lbcap"></div></div>
+<div class="filters" id="gallery"><div class="wrap">
+  <select id="camera" aria-label="Camera"><option value="">All cameras</option></select>
+  <select id="category" aria-label="Category"><option value="">All subjects</option></select>
+  <select id="tier" aria-label="Resolution"><option value="">All resolutions</option></select>
+  <select id="year" aria-label="Year"><option value="">All years</option></select>
+  <button class="reset" id="reset">Reset</button>
+  <span class="count" id="n"></span>
+</div></div>
+<main class="wrap"><div class="grid" id="grid"></div></main>
+<div class="wrap"><footer>© Yuval Kolodkin-Gal. All rights reserved. Photographs may not be reused without permission.</footer></div>
+<div id="lb" role="dialog" aria-modal="true"><img id="lbimg" alt=""><div class="cap" id="lbcap"></div>
+  <div class="nav"><button id="prev">← Prev</button><button id="close">Close</button><button id="next">Next →</button></div></div>
 <script src="data.js"></script>
 <script>
-const F={camera:p=>p.camera_name,category:p=>p.category,tier:p=>p.resolution_tier,year:p=>p.date==='unknown'?'date unknown':p.date.slice(0,4)};
-for(const k in F){const s=document.getElementById(k);[...new Set(CATALOG.map(F[k]))].sort().forEach(v=>s.add(new Option(`${v} (${CATALOG.filter(p=>F[k](p)===v).length})`,v)));s.onchange=draw}
-const grid=document.getElementById('grid'),lb=document.getElementById('lb');
+const nice=s=>String(s).replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+const F={camera:p=>p.camera_name,category:p=>p.category,tier:p=>p.resolution_tier,year:p=>p.date==='unknown'?'Date unknown':p.date.slice(0,4)};
+const LABEL={tier:v=>({'full-res-20mp-plus':'20 MP+','12mp-class':'12 MP class','medium-4-10mp':'4–10 MP','web-under-4mp':'Under 4 MP'})[v]||v,category:nice};
+for(const k in F){const s=document.getElementById(k);
+  [...new Set(CATALOG.map(F[k]))].sort().forEach(v=>s.add(new Option(`${(LABEL[k]||String)(v)} (${CATALOG.filter(p=>F[k](p)===v).length})`,v)));
+  s.onchange=draw}
+const st=document.getElementById('stats');
+st.innerHTML=`<div><b>${CATALOG.length}</b>photographs</div><div><b>${new Set(CATALOG.map(F.camera)).size}</b>cameras</div><div><b>${new Set(CATALOG.map(F.category)).size}</b>subjects</div>`;
+document.getElementById('reset').onclick=()=>{for(const k in F)document.getElementById(k).value='';draw()};
+const grid=document.getElementById('grid'),lb=document.getElementById('lb');let list=[],cur=0;
+function meta(p){return [p.camera_name,p.date==='unknown'?'date unknown':p.date,nice(p.category),p.original_megapixels+' MP original'].join(' · ')}
 function draw(){
   const sel=Object.fromEntries(Object.keys(F).map(k=>[k,document.getElementById(k).value]));
-  const list=CATALOG.filter(p=>Object.keys(F).every(k=>!sel[k]||F[k](p)===sel[k]));
+  list=CATALOG.filter(p=>Object.keys(F).every(k=>!sel[k]||F[k](p)===sel[k])).slice().reverse();
   document.getElementById('n').textContent=list.length+' photos';
   grid.innerHTML='';
-  for(const p of list){const f=document.createElement('figure');
-    f.innerHTML=`<img loading="lazy" src="${p.preview}" alt="${p.title}"><figcaption>${p.title}<small>${p.camera_name} · ${p.date} · ${p.category}</small></figcaption>`;
-    f.querySelector('img').onclick=()=>{document.getElementById('lbimg').src=p.master;document.getElementById('lbcap').textContent=`${p.title} — ${p.camera_name}, ${p.date}`;lb.classList.add('on')};
-    grid.appendChild(f)}
+  list.forEach((p,i)=>{const f=document.createElement('figure');
+    f.innerHTML=`<img loading="lazy" src="${p.preview}" alt="${p.title}" width="${p.width}" height="${p.height}"><figcaption><b style="font-weight:500">${p.title}</b><span>${p.camera_name}</span></figcaption>`;
+    f.querySelector('img').onclick=()=>open(i);grid.appendChild(f)});
 }
-lb.onclick=()=>lb.classList.remove('on');document.onkeydown=e=>{if(e.key==='Escape')lb.classList.remove('on')};
+function open(i){cur=(i+list.length)%list.length;const p=list[cur];
+  document.getElementById('lbimg').src=p.master;document.getElementById('lbimg').alt=p.title;
+  document.getElementById('lbcap').innerHTML=`<b>${p.title}</b><br>${meta(p)}`;lb.classList.add('on')}
+const close=()=>lb.classList.remove('on');
+document.getElementById('close').onclick=close;document.getElementById('prev').onclick=()=>open(cur-1);document.getElementById('next').onclick=()=>open(cur+1);
+lb.onclick=e=>{if(e.target===lb)close()};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
 draw();
 </script></body></html>

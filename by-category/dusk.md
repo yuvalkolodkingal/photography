@@ -4,9 +4,9 @@
 
 ### Lavender Light
 
-[![Lavender Light](../previews/lavender-light.jpg)](../photos/unknown/2025/lavender-light.jpg)
+[![Lavender Light](../previews/lavender-light.jpg)](../photos/canon-powershot-sx270-hs/2025/lavender-light.jpg)
 
-Unknown camera · 2025-05-03 · dusk · original 1.4 MP
+Canon PowerShot SX270 HS · 2025-05-03 · dusk · original 1.4 MP
 
 ### Rose City
 

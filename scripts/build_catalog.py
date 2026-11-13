@@ -62,6 +62,21 @@ def save_master(src: Image.Image, dst: Path) -> tuple[int, int]:
     return im.size
 
 
+# Camera confirmed by the photographer, overriding filename inference.
+CAMERA_OVERRIDES = {
+    "stone-and-branches": "canon-powershot-sx270-hs",
+    "golden-lichen": "canon-powershot-sx270-hs",
+    "sand-and-sky": "canon-powershot-sx270-hs",
+    "seedpod-still-life": "canon-powershot-sx270-hs",
+    "lavender-light": "canon-powershot-sx270-hs",
+    "jellyfish-drift": "phone",
+    "night-shore": "phone",
+    "summer-spirals": "phone",
+    "moray-in-shelter": "phone",
+    "ember-clouds-city-silhouette": "phone",
+}
+
+
 def infer_wallpaper(src_file: str, w: int, h: int):
     name = Path(src_file).name
     m = re.match(r"IMG-(\d{8})-WA\d+", name)
@@ -80,6 +95,8 @@ def wallpaper_items(repo: Path):
     for w in coll["wallpapers"]:
         s = w["source"]
         cam, date, how = infer_wallpaper(s.get("file", ""), s.get("width", 0), s.get("height", 0))
+        if w["slug"] in CAMERA_OVERRIDES:
+            cam, how = CAMERA_OVERRIDES[w["slug"]], "confirmed by photographer"
         yield {
             "slug": w["slug"], "title": w["title"], "description": w.get("description", ""),
             "category": w.get("theme", "uncategorized"), "src": repo / w["master"],
@@ -165,6 +182,13 @@ def main():
             "source_sha256": src_hash, "photographer": AUTHOR,
         })
     photos.sort(key=lambda p: (p["date"], p["slug"]))
+    keep = {p["master"] for p in photos} | {p["preview"] for p in photos}
+    for f in list((ROOT / "photos").rglob("*.jpg")) + list((ROOT / "previews").glob("*.jpg")):
+        if f.relative_to(ROOT).as_posix() not in keep:
+            f.unlink()
+    for d in sorted((ROOT / "photos").rglob("*"), reverse=True):
+        if d.is_dir() and not any(d.iterdir()):
+            d.rmdir()
     catalog_path.parent.mkdir(parents=True, exist_ok=True)
     catalog_path.write_text(json.dumps({"author": AUTHOR, "count": len(photos), "photos": photos}, indent=2, default=str) + "\n")
     (ROOT / "data.js").write_text("const CATALOG=" + json.dumps(photos, default=str) + ";\n")

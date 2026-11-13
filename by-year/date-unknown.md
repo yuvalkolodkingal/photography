@@ -28,9 +28,9 @@ Canon PowerShot SX270 HS · unknown · canopy · original 9.0 MP
 
 ### Ember Clouds, City Silhouette
 
-[![Ember Clouds, City Silhouette](../previews/ember-clouds-city-silhouette.jpg)](../photos/unknown/date-unknown/ember-clouds-city-silhouette.jpg)
+[![Ember Clouds, City Silhouette](../previews/ember-clouds-city-silhouette.jpg)](../photos/phone/date-unknown/ember-clouds-city-silhouette.jpg)
 
-Unknown camera · unknown · ember · original 2.4 MP
+Phone camera · unknown · ember · original 2.4 MP
 
 ### Featherlines
 

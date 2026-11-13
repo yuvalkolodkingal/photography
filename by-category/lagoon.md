@@ -4,15 +4,15 @@
 
 ### Jellyfish Drift
 
-[![Jellyfish Drift](../previews/jellyfish-drift.jpg)](../photos/unknown/2024/jellyfish-drift.jpg)
+[![Jellyfish Drift](../previews/jellyfish-drift.jpg)](../photos/phone/2024/jellyfish-drift.jpg)
 
-Unknown camera · 2024-03-15 · lagoon · original 2.3 MP
+Phone camera · 2024-03-15 · lagoon · original 2.3 MP
 
 ### Moray in Shelter
 
-[![Moray in Shelter](../previews/moray-in-shelter.jpg)](../photos/unknown/2024/moray-in-shelter.jpg)
+[![Moray in Shelter](../previews/moray-in-shelter.jpg)](../photos/phone/2024/moray-in-shelter.jpg)
 
-Unknown camera · 2024-03-15 · lagoon · original 2.3 MP
+Phone camera · 2024-03-15 · lagoon · original 2.3 MP
 
 ### Featherlines
 

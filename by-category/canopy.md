@@ -4,15 +4,15 @@
 
 ### Golden Lichen
 
-[![Golden Lichen](../previews/golden-lichen.jpg)](../photos/unknown/2025/golden-lichen.jpg)
+[![Golden Lichen](../previews/golden-lichen.jpg)](../photos/canon-powershot-sx270-hs/2025/golden-lichen.jpg)
 
-Unknown camera · 2025-04-26 · canopy · original 1.4 MP
+Canon PowerShot SX270 HS · 2025-04-26 · canopy · original 1.4 MP
 
 ### Summer Spirals
 
-[![Summer Spirals](../previews/summer-spirals.jpg)](../photos/unknown/2026/summer-spirals.jpg)
+[![Summer Spirals](../previews/summer-spirals.jpg)](../photos/phone/2026/summer-spirals.jpg)
 
-Unknown camera · 2026-08-14 · canopy · original 1.9 MP
+Phone camera · 2026-08-14 · canopy · original 1.9 MP
 
 ### A Place to Pause
 
