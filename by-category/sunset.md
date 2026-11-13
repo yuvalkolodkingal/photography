@@ -1,12 +1,6 @@
 # sunset
 
-3 photos by Yuval Kolodkin-Gal.
-
-### City Afterglow
-
-[![City Afterglow](../previews/city-afterglow.jpg)](../photos/phone/2026/city-afterglow.jpg)
-
-Phone camera · 2026-09-06 · sunset · original 12.6 MP
+2 photos by Yuval Kolodkin-Gal.
 
 ### Rose City
 

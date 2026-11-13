@@ -1,6 +1,6 @@
 {
   "author": "Yuval Kolodkin-Gal",
-  "count": 25,
+  "count": 23,
   "photos": [
     {
       "slug": "jellyfish-drift",
@@ -26,32 +26,6 @@
       "master": "photos/phone/2024/jellyfish-drift.jpg",
       "preview": "previews/jellyfish-drift.jpg",
       "source_sha256": "c93a4c0146c8e02e376e222fbe5bd5f5dbcb090ec11c411018fdef18a824255f",
-      "photographer": "Yuval Kolodkin-Gal"
-    },
-    {
-      "slug": "stone-and-branches",
-      "title": "Stone and Branches",
-      "description": "Pale stone architecture and a slate roof seen through winter branches.",
-      "category": "city",
-      "wallpaper_theme": "ember",
-      "collection": "wallpapers",
-      "camera": "canon-powershot-sx270-hs",
-      "camera_name": "Canon PowerShot SX270 HS",
-      "camera_source": "confirmed by photographer",
-      "date": "2024-03-15",
-      "original_size": [
-        1536,
-        717
-      ],
-      "original_megapixels": 1.1,
-      "resolution_tier": "web-under-4mp",
-      "width": 1264,
-      "height": 711,
-      "orientation": "landscape",
-      "exif": {},
-      "master": "photos/canon-powershot-sx270-hs/2024/stone-and-branches.jpg",
-      "preview": "previews/stone-and-branches.jpg",
-      "source_sha256": "15b19acabe6231511a577b993701ea3a6ddb1932f1a749257f3f93bcd182497f",
       "photographer": "Yuval Kolodkin-Gal"
     },
     {
@@ -208,32 +182,6 @@
       "master": "photos/phone/2026/summer-spirals.jpg",
       "preview": "previews/summer-spirals.jpg",
       "source_sha256": "f951aadcf44f1d8969cd634ccb4d3753f91e03ea62693bff32ef9718aebf7e22",
-      "photographer": "Yuval Kolodkin-Gal"
-    },
-    {
-      "slug": "city-afterglow",
-      "title": "City Afterglow",
-      "description": "Cloud layers and a warm sun above the city skyline.",
-      "category": "sunset",
-      "wallpaper_theme": "ember",
-      "collection": "wallpapers",
-      "camera": "phone",
-      "camera_name": "Phone camera",
-      "camera_source": "inferred: phone camera filename",
-      "date": "2026-09-06",
-      "original_size": [
-        4096,
-        3072
-      ],
-      "original_megapixels": 12.6,
-      "resolution_tier": "12mp-class",
-      "width": 3840,
-      "height": 2160,
-      "orientation": "landscape",
-      "exif": {},
-      "master": "photos/phone/2026/city-afterglow.jpg",
-      "preview": "previews/city-afterglow.jpg",
-      "source_sha256": "3a49ed965b054bebc2ca8147fb608029287d1670632cb305bd08d3801b7a147e",
       "photographer": "Yuval Kolodkin-Gal"
     },
     {

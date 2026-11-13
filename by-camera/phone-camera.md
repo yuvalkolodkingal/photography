@@ -1,6 +1,6 @@
 # Phone camera
 
-5 photos by Yuval Kolodkin-Gal.
+4 photos by Yuval Kolodkin-Gal.
 
 ### Jellyfish Drift
 
@@ -19,12 +19,6 @@ Phone camera · 2026-02-26 · night · original 3.1 MP
 [![Summer Spirals](../previews/summer-spirals.jpg)](../photos/phone/2026/summer-spirals.jpg)
 
 Phone camera · 2026-08-14 · insects · original 1.9 MP
-
-### City Afterglow
-
-[![City Afterglow](../previews/city-afterglow.jpg)](../photos/phone/2026/city-afterglow.jpg)
-
-Phone camera · 2026-09-06 · sunset · original 12.6 MP
 
 ### Rose City
 
