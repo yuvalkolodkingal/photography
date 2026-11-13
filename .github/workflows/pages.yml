@@ -25,7 +25,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp -r index.html data.js .nojekyll previews photos by-camera by-category by-resolution by-year _site/
+          cp -r index.html gallery.html assets data.js .nojekyll previews photos by-camera by-category by-resolution by-year _site/
           cp -r metadata _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

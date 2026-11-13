@@ -1,110 +1,117 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photography by Yuval Kolodkin-Gal</title>
-<meta name="description" content="Original photography by Yuval Kolodkin-Gal, organised by camera, category, resolution and year.">
-<style>
-:root { color-scheme: dark; --bg:#151719; --surface:#202326; --fg:#edeeeb; --muted:#b0b6b7; --line:#42484b; --accent:#d6decb; }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-a { color:inherit; }
-button, select { font:inherit; cursor:pointer; }
-.wrap { max-width:1440px; margin:0 auto; padding:0 24px; }
-header.top { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; border-bottom:1px solid var(--line); flex-wrap:wrap; }
-.signature { text-decoration:none; font-size:14px; font-weight:600; }
-nav { display:flex; gap:28px; font-size:14px; flex-wrap:wrap; }
-nav a { color:var(--muted); text-decoration:none; } nav a:hover { color:var(--fg); }
-.intro { padding:56px 0 28px; }
-h1 { font-weight:450; font-size:clamp(36px,4.5vw,64px); letter-spacing:-.055em; line-height:1.08; margin:0 0 18px; }
-.intro p { color:var(--muted); max-width:680px; margin:0; font-size:17px; }
-.stats { display:flex; gap:28px; margin-top:22px; color:var(--muted); font-size:14px; flex-wrap:wrap; }
-.stats b { color:var(--fg); font-weight:500; font-size:22px; display:block; letter-spacing:-.02em; }
-.filters { position:sticky; top:0; z-index:4; background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(8px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.filters .wrap { display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding-top:12px; padding-bottom:12px; }
-select { background:var(--surface); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font-size:14px; }
-.count { color:var(--muted); font-size:14px; margin-left:auto; }
-.reset { background:none; border:none; color:var(--muted); font-size:14px; text-decoration:underline; }
-.grid { columns:4 300px; column-gap:16px; padding:24px 0 64px; }
-figure { break-inside:avoid; margin:0 0 16px; }
-figure img { width:100%; height:auto; display:block; border-radius:4px; background:var(--surface); cursor:zoom-in; }
-figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; gap:2px 12px; padding-top:8px; font-size:14px; }
-figcaption span { color:var(--muted); }
-#lb { position:fixed; inset:0; background:rgba(10,11,12,.96); display:none; z-index:9; align-items:center; justify-content:center; flex-direction:column; gap:12px; padding:16px; }
-#lb.on { display:flex; }
-#lb img { max-width:100%; max-height:84vh; width:auto; height:auto; object-fit:contain; border-radius:4px; }
-#lb .cap { color:var(--muted); font-size:14px; text-align:center; }
-#lb .cap b { color:var(--fg); font-weight:500; }
-#lb .nav { display:flex; gap:10px; }
-#lb button { background:var(--surface); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:14px; }
-.browse { padding:8px 0 36px; } .browse h2 { margin:28px 0 14px; scroll-margin-top:20px; }
-.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
-.card { position:relative; display:block; border-radius:6px; overflow:hidden; background:var(--surface); text-decoration:none; aspect-ratio:3/2; }
-.card img { width:100%; height:100%; object-fit:cover; display:block; opacity:.72; transition:opacity .2s; }
-.card:hover img { opacity:1; }
-.card span { position:absolute; left:12px; bottom:10px; right:12px; font-weight:500; text-shadow:0 1px 6px #000; }
-.card small { display:block; color:var(--fg); opacity:.85; font-weight:400; }
-footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
-@media (max-width:600px){ .wrap{padding:0 16px} nav{gap:16px} .count{margin-left:0;width:100%} }
-</style></head><body>
-<div class="wrap">
-  <header class="top">
-    <a class="signature" href="https://github.com/yuvalkolodkingal">Yuval Kolodkin-Gal</a>
-    <nav><a href="#gallery">Gallery</a><a href="#cameras">Cameras</a><a href="#subjects">Subjects</a><a href="https://github.com/yuvalkolodkingal/photography">Source</a></nav>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yuval Kolodkin-Gal · Photography</title>
+<meta name="description" content="Photography by Yuval Kolodkin-Gal. Mostly geese, also birds that aren't geese, flowers, parks and the occasional sunset.">
+<meta name="author" content="Yuval Kolodkin-Gal">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:title" content="Yuval Kolodkin-Gal · Photography">
+<meta property="og:description" content="Mostly geese.">
+<meta property="og:image" content="previews/2026-11-13_geese_0422.jpg">
+<link rel="icon" href="previews/2026-11-13_geese_0420.jpg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="home" data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav glass regular" aria-label="Main">
+  <div class="nav-in">
+    <a class="brand" href="./">Yuval Kolodkin-Gal</a>
+    <div class="nav-links">
+      <a href="./" aria-current="page">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+<div class="topbar glass regular">Yuval Kolodkin-Gal</div>
+
+<main id="main">
+  <header class="hero">
+    <div class="hero-photo">
+      <img src="previews/2026-11-13_geese_0422.jpg"
+           srcset="previews/2026-11-13_geese_0422.jpg 1200w, photos/canon-eos-r50/2026/2026-11-13_geese_0422.jpg 3840w"
+           sizes="100vw" width="3840" height="2560"
+           alt="An Egyptian goose in profile against blurred green grass" fetchpriority="high">
+    </div>
+    <div class="hero-shade"></div>
+    <div class="hero-text">
+      <span class="eyebrow rise">Photography by Yuval Kolodkin-Gal</span>
+      <h1 class="h1 rise d1">Mostly geese.</h1>
+      <p class="lede rise d2">Also birds that aren't geese, flowers, and the occasional sunset.</p>
+      <div class="hero-actions rise d3">
+        <a class="btn primary press" href="gallery.html">Open the gallery</a>
+        <a class="btn glass press" href="#categories">Browse categories</a>
+      </div>
+      <span class="mono hero-exif rise d3">Egyptian goose · 150mm · f/7.1 · 1/125 · ISO 100</span>
+    </div>
   </header>
-  <section class="intro">
-    <h1>Photography</h1>
-    <p>Original photographs of birds, water, plants and light, taken by Yuval Kolodkin-Gal. Filter by camera, subject, original resolution or year, and click any photo to see it large.</p>
-    <div class="stats" id="stats"></div>
+
+  <section class="stats" id="stats" aria-label="In numbers"></section>
+
+  <section class="section" aria-labelledby="work-title">
+    <div class="section-head">
+      <h2 class="h2" id="work-title">Selected work</h2>
+      <a class="link" href="gallery.html">All photographs ›</a>
+    </div>
+    <div class="rows" id="work"></div>
   </section>
-</div>
-<div class="filters" id="gallery"><div class="wrap">
-  <select id="camera" aria-label="Camera"><option value="">All cameras</option></select>
-  <select id="category" aria-label="Category"><option value="">All subjects</option></select>
-  <select id="tier" aria-label="Resolution"><option value="">All resolutions</option></select>
-  <select id="year" aria-label="Year"><option value="">All years</option></select>
-  <button class="reset" id="reset">Reset</button>
-  <span class="count" id="n"></span>
-</div></div>
-<main class="wrap"><div class="grid" id="grid"></div>
-<section class="browse"><h2 id="cameras">Cameras</h2><div class="cards" id="camcards"></div><h2 id="subjects">Subjects</h2><div class="cards" id="subcards"></div></section></main>
-<div class="wrap"><footer>© Yuval Kolodkin-Gal. All rights reserved. Photographs may not be reused without permission.</footer></div>
-<div id="lb" role="dialog" aria-modal="true"><img id="lbimg" alt=""><div class="cap" id="lbcap"></div>
-  <div class="nav"><button id="prev">← Prev</button><button id="close">Close</button><button id="next">Next →</button></div></div>
+
+  <section class="section feature" aria-labelledby="feature-title">
+    <h2 class="h2" id="feature-title" data-reveal>The sun, leaving.</h2>
+    <p data-reveal>13 November 2026, 16:40. Photographed at 150mm, from a safe distance.</p>
+    <div id="feature-photo" style="width:100%"></div>
+    <span class="mono muted">Canon EOS R50 · 150mm · f/9 · 1/250 · ISO 100</span>
+  </section>
+
+  <section class="section cats" id="categories" aria-labelledby="cats-title">
+    <div class="section-head">
+      <h2 class="h2" id="cats-title">Categories</h2>
+      <span class="muted">Six of them. One is doing most of the work.</span>
+    </div>
+    <div class="rows" id="cats"></div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about-main">
+      <h2 class="h2" id="about-title">About</h2>
+      <p class="bio" data-reveal>
+        <span>I'm Yuval, a photographer based in Israel.</span>
+        <span>I photograph whatever turns up at the park, which so far is mostly geese.</span>
+        <span>I started on a PowerShot and a phone, and moved to a Canon EOS R50 in November 2026.</span>
+        <span>After dark I photograph the moon and stars, then stack the frames in Sequator.</span>
+        <span>The rest of the time I build software, including the editor these photos pass through.</span>
+      </p>
+      <div class="contact">
+        <a class="btn accent press" href="https://github.com/yuvalkolodkingal" target="_blank" rel="noopener">Get in touch</a>
+        <span>Prints, licensing, or anything else. Please ask before reusing.</span>
+      </div>
+    </div>
+    <dl class="specs" data-reveal>
+      <div><dt>Camera</dt><dd>Canon EOS R50</dd></div>
+      <div><dt>Lens</dt><dd>RF-S 18-150mm F3.5-6.3 IS STM</dd></div>
+      <div><dt>Before that</dt><dd>Canon PowerShot SX270 HS, a phone</dd></div>
+      <div><dt>Files</dt><dd>CR3 raw and JPEG</dd></div>
+      <div><dt>Night work</dt><dd>Stacked in Sequator</dd></div>
+      <div><dt>Active</dt><dd>2024 to present</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <span>Copyright © 2026 Yuval Kolodkin-Gal. All rights reserved.</span>
+  <a href="https://github.com/yuvalkolodkingal/photography">Source on GitHub</a>
+</footer>
+
+<nav class="tabbar glass regular" aria-label="Main">
+  <a href="./" aria-current="page"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/></svg>Work</a>
+  <a href="gallery.html"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="12" rx="2"/><path d="M3 13l4-4 3 3 2-2 5 5"/></svg>Gallery</a>
+  <a href="#about"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3"/><path d="M4 17c0-3 3-5 6-5s6 2 6 5"/></svg>About</a>
+</nav>
+
 <script src="data.js"></script>
-<script>
-const nice=s=>String(s).replace('flowers-plants','flowers & plants').replace('sea-life','sea life').replace('nature-details','nature details').replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
-const F={camera:p=>p.camera_name,category:p=>p.category,tier:p=>p.resolution_tier,year:p=>p.date==='unknown'?'Date unknown':p.date.slice(0,4)};
-const LABEL={tier:v=>({'full-res-20mp-plus':'20 MP+','12mp-class':'12 MP class','medium-4-10mp':'4–10 MP','web-under-4mp':'Under 4 MP'})[v]||v,category:nice};
-for(const k in F){const s=document.getElementById(k);
-  [...new Set(CATALOG.map(F[k]))].sort().forEach(v=>s.add(new Option(`${(LABEL[k]||String)(v)} (${CATALOG.filter(p=>F[k](p)===v).length})`,v)));
-  s.onchange=draw}
-const st=document.getElementById('stats');
-st.innerHTML=`<div><b>${CATALOG.length}</b>photographs</div><div><b>${new Set(CATALOG.map(F.camera)).size}</b>cameras</div><div><b>${new Set(CATALOG.map(F.category)).size}</b>subjects</div>`;
-document.getElementById('reset').onclick=()=>{for(const k in F)document.getElementById(k).value='';draw()};
-function cards(el,k){const g={};CATALOG.forEach(p=>(g[F[k](p)]??=[]).push(p));
-  document.getElementById(el).innerHTML=Object.keys(g).sort((a,b)=>g[b].length-g[a].length).map(v=>{const c=g[v][g[v].length-1];
-    return `<a class="card" href="#${k}=${encodeURIComponent(v)}"><img loading="lazy" src="${c.preview}" alt=""><span>${(LABEL[k]||String)(v)}<small>${g[v].length} photo${g[v].length===1?'':'s'}</small></span></a>`}).join('')}
-cards('camcards','camera');cards('subcards','category');
-function fromHash(){const m=location.hash.slice(1).match(/^(camera|category|tier|year)=(.+)$/);if(!m)return;
-  for(const k in F)document.getElementById(k).value='';document.getElementById(m[1]).value=decodeURIComponent(m[2]);draw();
-  document.getElementById('gallery').scrollIntoView({behavior:'smooth'})}
-window.addEventListener('hashchange',fromHash);
-const grid=document.getElementById('grid'),lb=document.getElementById('lb');let list=[],cur=0;
-function meta(p){return [p.camera_name,p.date==='unknown'?'date unknown':p.date,nice(p.category),p.original_megapixels+' MP original'].join(' · ')}
-function draw(){
-  const sel=Object.fromEntries(Object.keys(F).map(k=>[k,document.getElementById(k).value]));
-  list=CATALOG.filter(p=>Object.keys(F).every(k=>!sel[k]||F[k](p)===sel[k])).slice().reverse();
-  document.getElementById('n').textContent=list.length+' photos';
-  grid.innerHTML='';
-  list.forEach((p,i)=>{const f=document.createElement('figure');
-    f.innerHTML=`<img loading="lazy" src="${p.preview}" alt="${p.title}" width="${p.width}" height="${p.height}"><figcaption><b style="font-weight:500">${p.title}</b><span>${p.camera_name}</span></figcaption>`;
-    f.querySelector('img').onclick=()=>open(i);grid.appendChild(f)});
-}
-function open(i){cur=(i+list.length)%list.length;const p=list[cur];
-  document.getElementById('lbimg').src=p.master;document.getElementById('lbimg').alt=p.title;
-  document.getElementById('lbcap').innerHTML=`<b>${p.title}</b><br>${meta(p)}`;lb.classList.add('on')}
-const close=()=>lb.classList.remove('on');
-document.getElementById('close').onclick=close;document.getElementById('prev').onclick=()=>open(cur-1);document.getElementById('next').onclick=()=>open(cur+1);
-lb.onclick=e=>{if(e.target===lb)close()};
-document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
-draw();fromHash();
-</script></body></html>
+<script src="assets/site.js"></script>
+</body>
+</html>

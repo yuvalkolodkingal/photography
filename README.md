@@ -1,8 +1,8 @@
 # Photography
 
-Original photographs by **Yuval Kolodkin-Gal**. All rights reserved — see [COPYRIGHT](COPYRIGHT).
+Original photographs by **Yuval Kolodkin-Gal**. All rights reserved. See [COPYRIGHT](COPYRIGHT).
 
-Open [`index.html`](index.html) for a filterable gallery (camera, category, resolution, year).
+The site is [`index.html`](index.html) (selected work, categories, about) and [`gallery.html`](gallery.html) (every photo, newest first, filterable by category). Styles and scripts live in `assets/`. Photo names and the six site categories are set at the top of `assets/site.js`, so rebuilding the catalog doesn't touch them.
 
 ## Browse
 
