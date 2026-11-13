@@ -5,7 +5,7 @@
 - [dog](dog.md) (3)
 - [ducks](ducks.md) (3)
 - [flowers-plants](flowers-plants.md) (13)
-- [geese](geese.md) (14)
+- [geese](geese.md) (13)
 - [insects](insects.md) (2)
 - [landscape](landscape.md) (8)
 - [nature-details](nature-details.md) (2)

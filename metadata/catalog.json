@@ -1,6 +1,6 @@
 {
   "author": "Yuval Kolodkin-Gal",
-  "count": 67,
+  "count": 66,
   "photos": [
     {
       "slug": "jellyfish-drift",
@@ -1092,40 +1092,6 @@
       "master": "photos/canon-eos-r50/2026/2026-11-13_geese_0420.jpg",
       "preview": "previews/2026-11-13_geese_0420.jpg",
       "source_sha256": "cec41bc11a909a3132b9733d7c502158ae4f5c3534ab9e6961b9c2ed463639aa",
-      "photographer": "Yuval Kolodkin-Gal"
-    },
-    {
-      "slug": "2026-11-13_geese_0421",
-      "title": "Geese 0421",
-      "description": "",
-      "category": "geese",
-      "wallpaper_theme": null,
-      "collection": "2026-11-13",
-      "camera": "canon-eos-r50",
-      "camera_name": "Canon EOS R50",
-      "camera_source": "exif",
-      "date": "2026-11-13",
-      "original_size": [
-        6000,
-        4000
-      ],
-      "original_megapixels": 24.0,
-      "resolution_tier": "full-res-20mp-plus",
-      "width": 3840,
-      "height": 2560,
-      "orientation": "landscape",
-      "exif": {
-        "model": "Canon EOS R50",
-        "lens": "RF-S18-150mm F3.5-6.3 IS STM",
-        "iso": 100,
-        "f_number": 7.1,
-        "exposure": "0.008",
-        "focal_mm": 150.0,
-        "datetime": "2026:11:13 13:54:40"
-      },
-      "master": "photos/canon-eos-r50/2026/2026-11-13_geese_0421.jpg",
-      "preview": "previews/2026-11-13_geese_0421.jpg",
-      "source_sha256": "a89418c5999b0757413269ab6a10b5f4c620ec810009ce79388d54399f0d1110",
       "photographer": "Yuval Kolodkin-Gal"
     },
     {

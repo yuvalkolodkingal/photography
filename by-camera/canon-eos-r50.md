@@ -1,6 +1,6 @@
 # Canon EOS R50
 
-46 photos by Yuval Kolodkin-Gal.
+45 photos by Yuval Kolodkin-Gal.
 
 ### Birds 0285
 
@@ -155,12 +155,6 @@ Canon EOS R50 · 2026-11-13 · geese · original 24.0 MP
 ### Geese 0420
 
 [![Geese 0420](../previews/2026-11-13_geese_0420.jpg)](../photos/canon-eos-r50/2026/2026-11-13_geese_0420.jpg)
-
-Canon EOS R50 · 2026-11-13 · geese · original 24.0 MP
-
-### Geese 0421
-
-[![Geese 0421](../previews/2026-11-13_geese_0421.jpg)](../photos/canon-eos-r50/2026/2026-11-13_geese_0421.jpg)
 
 Canon EOS R50 · 2026-11-13 · geese · original 24.0 MP
 
