@@ -1,6 +1,6 @@
 # Photos by category
 
-- [birds](birds.md) (4)
+- [birds](birds.md) (3)
 - [cats](cats.md) (1)
 - [ducks](ducks.md) (1)
 - [flowers-plants](flowers-plants.md) (6)

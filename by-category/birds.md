@@ -1,12 +1,6 @@
 # birds
 
-4 photos by Yuval Kolodkin-Gal.
-
-### Featherlines
-
-[![Featherlines](../previews/featherlines.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/featherlines.jpg)
-
-Canon PowerShot SX270 HS · unknown · birds · original 12.0 MP
+3 photos by Yuval Kolodkin-Gal.
 
 ### Fig Thief
 

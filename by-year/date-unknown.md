@@ -1,6 +1,6 @@
 # date unknown
 
-15 photos by Yuval Kolodkin-Gal.
+14 photos by Yuval Kolodkin-Gal.
 
 ### A Place to Pause
 
@@ -19,12 +19,6 @@ Canon PowerShot SX270 HS · unknown · insects · original 9.0 MP
 [![Canopy Light](../previews/canopy-light.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/canopy-light.jpg)
 
 Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
-
-### Featherlines
-
-[![Featherlines](../previews/featherlines.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/featherlines.jpg)
-
-Canon PowerShot SX270 HS · unknown · birds · original 12.0 MP
 
 ### Fig Thief
 

@@ -1,6 +1,6 @@
 {
   "author": "Yuval Kolodkin-Gal",
-  "count": 23,
+  "count": 22,
   "photos": [
     {
       "slug": "jellyfish-drift",
@@ -286,32 +286,6 @@
       "master": "photos/canon-powershot-sx270-hs/date-unknown/canopy-light.jpg",
       "preview": "previews/canopy-light.jpg",
       "source_sha256": "a202379fbbd80d38d0aa6bef1ac02f84159c5bb0eb6cdef0065f31202b4134b2",
-      "photographer": "Yuval Kolodkin-Gal"
-    },
-    {
-      "slug": "featherlines",
-      "title": "Featherlines",
-      "description": "An abstract close view of blue feather barbs and their central shaft.",
-      "category": "birds",
-      "wallpaper_theme": "lagoon",
-      "collection": "wallpapers",
-      "camera": "canon-powershot-sx270-hs",
-      "camera_name": "Canon PowerShot SX270 HS",
-      "camera_source": "inferred: Canon filename + 12 MP 4000x3000 sensor sizes",
-      "date": "unknown",
-      "original_size": [
-        4000,
-        3000
-      ],
-      "original_megapixels": 12.0,
-      "resolution_tier": "12mp-class",
-      "width": 3840,
-      "height": 2160,
-      "orientation": "landscape",
-      "exif": {},
-      "master": "photos/canon-powershot-sx270-hs/date-unknown/featherlines.jpg",
-      "preview": "previews/featherlines.jpg",
-      "source_sha256": "97f6600d370c47f25c3d07ca9a9107d911526318e95f92e07228185e103f51bc",
       "photographer": "Yuval Kolodkin-Gal"
     },
     {
