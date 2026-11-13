@@ -77,6 +77,23 @@ CAMERA_OVERRIDES = {
 }
 
 
+# Subject for each Wallpapers photo (the source collection only records a colour theme).
+SUBJECTS = {
+    "butterfly-in-gold": "insects", "summer-spirals": "insects",
+    "fig-thief": "birds", "hoopoe-in-the-grass": "birds", "quiet-water": "birds",
+    "featherlines": "birds", "reed-reflections": "ducks",
+    "porcelain-petals": "flowers-plants", "canopy-light": "flowers-plants",
+    "violet-water": "flowers-plants", "magenta-in-the-leaves": "flowers-plants",
+    "bottlebrush": "flowers-plants", "pink-berry": "flowers-plants", "lavender-light": "flowers-plants",
+    "garden-nap": "cats",
+    "a-place-to-pause": "landscape", "sand-and-sky": "landscape", "open-sky": "sky",
+    "last-amber": "sunset", "city-afterglow": "sunset", "ember-clouds-city-silhouette": "sunset", "rose-city": "sunset",
+    "stone-and-branches": "city", "night-shore": "night",
+    "jellyfish-drift": "sea-life", "moray-in-shelter": "sea-life",
+    "golden-lichen": "nature-details", "seedpod-still-life": "nature-details",
+}
+
+
 def infer_wallpaper(src_file: str, w: int, h: int):
     name = Path(src_file).name
     m = re.match(r"IMG-(\d{8})-WA\d+", name)
@@ -99,7 +116,7 @@ def wallpaper_items(repo: Path):
             cam, how = CAMERA_OVERRIDES[w["slug"]], "confirmed by photographer"
         yield {
             "slug": w["slug"], "title": w["title"], "description": w.get("description", ""),
-            "category": w.get("theme", "uncategorized"), "src": repo / w["master"],
+            "category": SUBJECTS.get(w["slug"], "uncategorized"), "theme": w.get("theme"), "src": repo / w["master"],
             "camera": cam, "camera_source": how, "date": date,
             "original_size": [s.get("width"), s.get("height")],
             "collection": "wallpapers", "exif": {},
@@ -172,7 +189,7 @@ def main():
         osz = it["original_size"] or (prev or {}).get("original_size") or [w, h]
         photos.append({
             "slug": it["slug"], "title": it["title"], "description": it["description"],
-            "category": it["category"], "collection": it["collection"],
+            "category": it["category"], "wallpaper_theme": it.get("theme"), "collection": it["collection"],
             "camera": it["camera"], "camera_name": CAMERA_NAMES.get(it["camera"], it["camera"]),
             "camera_source": it["camera_source"], "date": it["date"],
             "original_size": osz, "original_megapixels": round(osz[0] * osz[1] / 1e6, 1),
