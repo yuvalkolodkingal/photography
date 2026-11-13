@@ -1,6 +1,6 @@
 # Canon PowerShot SX270 HS
 
-21 photos by Yuval Kolodkin-Gal.
+20 photos by Yuval Kolodkin-Gal.
 
 ### Stone and Branches
 
@@ -37,12 +37,6 @@ Canon PowerShot SX270 HS · 2025-05-03 · flowers-plants · original 1.4 MP
 [![A Place to Pause](../previews/a-place-to-pause.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/a-place-to-pause.jpg)
 
 Canon PowerShot SX270 HS · unknown · landscape · original 9.0 MP
-
-### Bottlebrush
-
-[![Bottlebrush](../previews/bottlebrush.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/bottlebrush.jpg)
-
-Canon PowerShot SX270 HS · unknown · flowers-plants · original 12.0 MP
 
 ### Butterfly in Gold
 

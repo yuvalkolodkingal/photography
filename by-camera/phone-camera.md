@@ -1,16 +1,10 @@
 # Phone camera
 
-7 photos by Yuval Kolodkin-Gal.
+5 photos by Yuval Kolodkin-Gal.
 
 ### Jellyfish Drift
 
 [![Jellyfish Drift](../previews/jellyfish-drift.jpg)](../photos/phone/2024/jellyfish-drift.jpg)
-
-Phone camera · 2024-03-15 · sea-life · original 2.3 MP
-
-### Moray in Shelter
-
-[![Moray in Shelter](../previews/moray-in-shelter.jpg)](../photos/phone/2024/moray-in-shelter.jpg)
 
 Phone camera · 2024-03-15 · sea-life · original 2.3 MP
 
@@ -37,9 +31,3 @@ Phone camera · 2026-09-06 · sunset · original 12.6 MP
 [![Rose City](../previews/rose-city.jpg)](../photos/phone/2026/rose-city.jpg)
 
 Phone camera · 2026-09-06 · sunset · original 12.6 MP
-
-### Ember Clouds, City Silhouette
-
-[![Ember Clouds, City Silhouette](../previews/ember-clouds-city-silhouette.jpg)](../photos/phone/date-unknown/ember-clouds-city-silhouette.jpg)
-
-Phone camera · unknown · sunset · original 2.4 MP

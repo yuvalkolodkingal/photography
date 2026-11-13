@@ -1,18 +1,12 @@
 # flowers-plants
 
-7 photos by Yuval Kolodkin-Gal.
+6 photos by Yuval Kolodkin-Gal.
 
 ### Lavender Light
 
 [![Lavender Light](../previews/lavender-light.jpg)](../photos/canon-powershot-sx270-hs/2025/lavender-light.jpg)
 
 Canon PowerShot SX270 HS · 2025-05-03 · flowers-plants · original 1.4 MP
-
-### Bottlebrush
-
-[![Bottlebrush](../previews/bottlebrush.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/bottlebrush.jpg)
-
-Canon PowerShot SX270 HS · unknown · flowers-plants · original 12.0 MP
 
 ### Canopy Light
 

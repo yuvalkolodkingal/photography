@@ -1,4 +1,4 @@
 # Photos by camera
 
-- [Canon PowerShot SX270 HS](canon-powershot-sx270-hs.md) (21)
-- [Phone camera](phone-camera.md) (7)
+- [Canon PowerShot SX270 HS](canon-powershot-sx270-hs.md) (20)
+- [Phone camera](phone-camera.md) (5)

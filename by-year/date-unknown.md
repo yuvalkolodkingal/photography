@@ -1,18 +1,12 @@
 # date unknown
 
-17 photos by Yuval Kolodkin-Gal.
+15 photos by Yuval Kolodkin-Gal.
 
 ### A Place to Pause
 
 [![A Place to Pause](../previews/a-place-to-pause.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/a-place-to-pause.jpg)
 
 Canon PowerShot SX270 HS · unknown · landscape · original 9.0 MP
-
-### Bottlebrush
-
-[![Bottlebrush](../previews/bottlebrush.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/bottlebrush.jpg)
-
-Canon PowerShot SX270 HS · unknown · flowers-plants · original 12.0 MP
 
 ### Butterfly in Gold
 
@@ -25,12 +19,6 @@ Canon PowerShot SX270 HS · unknown · insects · original 9.0 MP
 [![Canopy Light](../previews/canopy-light.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/canopy-light.jpg)
 
 Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
-
-### Ember Clouds, City Silhouette
-
-[![Ember Clouds, City Silhouette](../previews/ember-clouds-city-silhouette.jpg)](../photos/phone/date-unknown/ember-clouds-city-silhouette.jpg)
-
-Phone camera · unknown · sunset · original 2.4 MP
 
 ### Featherlines
 

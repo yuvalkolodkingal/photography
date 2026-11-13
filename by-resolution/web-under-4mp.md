@@ -1,16 +1,10 @@
 # web-under-4mp
 
-10 photos by Yuval Kolodkin-Gal.
+8 photos by Yuval Kolodkin-Gal.
 
 ### Jellyfish Drift
 
 [![Jellyfish Drift](../previews/jellyfish-drift.jpg)](../photos/phone/2024/jellyfish-drift.jpg)
-
-Phone camera · 2024-03-15 · sea-life · original 2.3 MP
-
-### Moray in Shelter
-
-[![Moray in Shelter](../previews/moray-in-shelter.jpg)](../photos/phone/2024/moray-in-shelter.jpg)
 
 Phone camera · 2024-03-15 · sea-life · original 2.3 MP
 
@@ -55,9 +49,3 @@ Phone camera · 2026-02-26 · night · original 3.1 MP
 [![Summer Spirals](../previews/summer-spirals.jpg)](../photos/phone/2026/summer-spirals.jpg)
 
 Phone camera · 2026-08-14 · insects · original 1.9 MP
-
-### Ember Clouds, City Silhouette
-
-[![Ember Clouds, City Silhouette](../previews/ember-clouds-city-silhouette.jpg)](../photos/phone/date-unknown/ember-clouds-city-silhouette.jpg)
-
-Phone camera · unknown · sunset · original 2.4 MP

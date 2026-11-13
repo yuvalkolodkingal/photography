@@ -77,6 +77,9 @@ CAMERA_OVERRIDES = {
 }
 
 
+# Wallpapers photos left out of this collection.
+EXCLUDE = {"bottlebrush", "ember-clouds-city-silhouette", "moray-in-shelter"}
+
 # Subject for each Wallpapers photo (the source collection only records a colour theme).
 SUBJECTS = {
     "butterfly-in-gold": "insects", "summer-spirals": "insects",
@@ -110,6 +113,8 @@ def infer_wallpaper(src_file: str, w: int, h: int):
 def wallpaper_items(repo: Path):
     coll = json.loads((repo / "metadata/collection.json").read_text())
     for w in coll["wallpapers"]:
+        if w["slug"] in EXCLUDE:
+            continue
         s = w["source"]
         cam, date, how = infer_wallpaper(s.get("file", ""), s.get("width", 0), s.get("height", 0))
         if w["slug"] in CAMERA_OVERRIDES:
@@ -142,6 +147,8 @@ def shoot_items(final_dir: Path, originals: Path, shoot: str):
         if jpg.name.endswith(".w3.jpg") or "your-crop" in jpg.name:
             continue
         cat, stem = jpg.parent.name, jpg.stem
+        if stem in {"IMG_0623", "IMG_0624", "IMG_0625", "IMG_0632", "IMG_0635", "IMG_0636"}:
+            cat = "sunset"
         ex = exif_of(originals / f"{stem}.JPG")
         model = (ex.get("model") or "").lower()
         cam = "canon-eos-r50" if "r50" in model else ("unknown" if not model else re.sub(r"[^a-z0-9]+", "-", model).strip("-"))

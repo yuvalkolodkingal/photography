@@ -1,5 +1,5 @@
 # Photos by resolution
 
-- [12mp-class](12mp-class.md) (4)
+- [12mp-class](12mp-class.md) (3)
 - [medium-4-10mp](medium-4-10mp.md) (14)
-- [web-under-4mp](web-under-4mp.md) (10)
+- [web-under-4mp](web-under-4mp.md) (8)
