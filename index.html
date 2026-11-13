@@ -71,7 +71,7 @@ footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--mute
   <div class="nav"><button id="prev">← Prev</button><button id="close">Close</button><button id="next">Next →</button></div></div>
 <script src="data.js"></script>
 <script>
-const nice=s=>String(s).replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+const nice=s=>String(s).replace('flowers-plants','flowers & plants').replace('sea-life','sea life').replace('nature-details','nature details').replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
 const F={camera:p=>p.camera_name,category:p=>p.category,tier:p=>p.resolution_tier,year:p=>p.date==='unknown'?'Date unknown':p.date.slice(0,4)};
 const LABEL={tier:v=>({'full-res-20mp-plus':'20 MP+','12mp-class':'12 MP class','medium-4-10mp':'4–10 MP','web-under-4mp':'Under 4 MP'})[v]||v,category:nice};
 for(const k in F){const s=document.getElementById(k);
@@ -82,7 +82,7 @@ st.innerHTML=`<div><b>${CATALOG.length}</b>photographs</div><div><b>${new Set(CA
 document.getElementById('reset').onclick=()=>{for(const k in F)document.getElementById(k).value='';draw()};
 function cards(el,k){const g={};CATALOG.forEach(p=>(g[F[k](p)]??=[]).push(p));
   document.getElementById(el).innerHTML=Object.keys(g).sort((a,b)=>g[b].length-g[a].length).map(v=>{const c=g[v][g[v].length-1];
-    return `<a class="card" href="#${k}=${encodeURIComponent(v)}"><img loading="lazy" src="${c.preview}" alt=""><span>${(LABEL[k]||String)(v)}<small>${g[v].length} photos</small></span></a>`}).join('')}
+    return `<a class="card" href="#${k}=${encodeURIComponent(v)}"><img loading="lazy" src="${c.preview}" alt=""><span>${(LABEL[k]||String)(v)}<small>${g[v].length} photo${g[v].length===1?'':'s'}</small></span></a>`}).join('')}
 cards('camcards','camera');cards('subcards','category');
 function fromHash(){const m=location.hash.slice(1).match(/^(camera|category|tier|year)=(.+)$/);if(!m)return;
   for(const k in F)document.getElementById(k).value='';document.getElementById(m[1]).value=decodeURIComponent(m[2]);draw();

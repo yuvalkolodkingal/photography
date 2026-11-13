@@ -1,12 +1,24 @@
 # sunset
 
-2 photos by Yuval Kolodkin-Gal.
+4 photos by Yuval Kolodkin-Gal.
 
 ### Rose City
 
 [![Rose City](../previews/rose-city.jpg)](../photos/phone/2026/rose-city.jpg)
 
 Phone camera · 2026-09-06 · sunset · original 12.6 MP
+
+### Sunset 0623
+
+[![Sunset 0623](../previews/2026-11-13_sunset_0623.jpg)](../photos/canon-eos-r50/2026/2026-11-13_sunset_0623.jpg)
+
+Canon EOS R50 · 2026-11-13 · sunset · original 24.0 MP
+
+### Sunset 0636
+
+[![Sunset 0636](../previews/2026-11-13_sunset_0636.jpg)](../photos/canon-eos-r50/2026/2026-11-13_sunset_0636.jpg)
+
+Canon EOS R50 · 2026-11-13 · sunset · original 24.0 MP
 
 ### Last Amber
 

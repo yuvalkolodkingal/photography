@@ -1,6 +1,30 @@
 # medium-4-10mp
 
-14 photos by Yuval Kolodkin-Gal.
+17 photos by Yuval Kolodkin-Gal.
+
+### Birds 0302
+
+[![Birds 0302](../previews/2026-11-13_birds_0302.jpg)](../photos/canon-eos-r50/2026/2026-11-13_birds_0302.jpg)
+
+Canon EOS R50 · 2026-11-13 · birds · original 6.0 MP
+
+### Birds 0331
+
+[![Birds 0331](../previews/2026-11-13_birds_0331.jpg)](../photos/canon-eos-r50/2026/2026-11-13_birds_0331.jpg)
+
+Canon EOS R50 · 2026-11-13 · birds · original 8.6 MP
+
+### Birds 0589
+
+[![Birds 0589](../previews/2026-11-13_birds_0589.jpg)](../photos/canon-eos-r50/2026/2026-11-13_birds_0589.jpg)
+
+Canon EOS R50 · 2026-11-13 · birds · original 4.7 MP
+
+### Water Fountain 0314
+
+[![Water Fountain 0314](../previews/2026-11-13_water-fountain_0314.jpg)](../photos/canon-eos-r50/2026/2026-11-13_water-fountain_0314.jpg)
+
+Canon EOS R50 · 2026-11-13 · water-fountain · original 7.3 MP
 
 ### A Place to Pause
 
@@ -55,12 +79,6 @@ Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
 [![Open Sky](../previews/open-sky.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/open-sky.jpg)
 
 Canon PowerShot SX270 HS · unknown · sky · original 9.0 MP
-
-### Pink Berry
-
-[![Pink Berry](../previews/pink-berry.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/pink-berry.jpg)
-
-Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
 
 ### Porcelain Petals
 

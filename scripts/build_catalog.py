@@ -78,7 +78,7 @@ CAMERA_OVERRIDES = {
 
 
 # Wallpapers photos left out of this collection.
-EXCLUDE = {"bottlebrush", "ember-clouds-city-silhouette", "moray-in-shelter", "stone-and-branches", "city-afterglow", "featherlines"}
+EXCLUDE = {"bottlebrush", "ember-clouds-city-silhouette", "moray-in-shelter", "stone-and-branches", "city-afterglow", "featherlines", "pink-berry"}
 
 # Subject for each Wallpapers photo (the source collection only records a colour theme).
 SUBJECTS = {

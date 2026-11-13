@@ -1,6 +1,6 @@
 # date unknown
 
-14 photos by Yuval Kolodkin-Gal.
+13 photos by Yuval Kolodkin-Gal.
 
 ### A Place to Pause
 
@@ -55,12 +55,6 @@ Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
 [![Open Sky](../previews/open-sky.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/open-sky.jpg)
 
 Canon PowerShot SX270 HS · unknown · sky · original 9.0 MP
-
-### Pink Berry
-
-[![Pink Berry](../previews/pink-berry.jpg)](../photos/canon-powershot-sx270-hs/date-unknown/pink-berry.jpg)
-
-Canon PowerShot SX270 HS · unknown · flowers-plants · original 9.0 MP
 
 ### Porcelain Petals
 

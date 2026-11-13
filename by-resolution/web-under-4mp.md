@@ -1,6 +1,6 @@
 # web-under-4mp
 
-7 photos by Yuval Kolodkin-Gal.
+8 photos by Yuval Kolodkin-Gal.
 
 ### Jellyfish Drift
 
@@ -43,3 +43,9 @@ Phone camera · 2026-02-26 · night · original 3.1 MP
 [![Summer Spirals](../previews/summer-spirals.jpg)](../photos/phone/2026/summer-spirals.jpg)
 
 Phone camera · 2026-08-14 · insects · original 1.9 MP
+
+### Birds 0298
+
+[![Birds 0298](../previews/2026-11-13_birds_0298.jpg)](../photos/canon-eos-r50/2026/2026-11-13_birds_0298.jpg)
+
+Canon EOS R50 · 2026-11-13 · birds · original 3.8 MP
